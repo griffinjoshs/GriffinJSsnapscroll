@@ -14,15 +14,11 @@ font-size: 30px;
     width: 50%;
 }
 
-.about-right {
-    width: 50%;
-}
-
 .outer-img {
-    height: 20pc;
+    /* height: 20pc;
     width: 20pc;
     min-width: 20pc;
-    border-radius: 16pc;
+    border-radius: 16pc; */
     background: white;
     position: relative;
     box-shadow: 9px 13px 37px 2px rgba(207, 207, 207, 0.575),-8px 1px 57px 29px rgba(207, 207, 207, 0.555), inset 0 -50px 20px -20px rgba(0, 0, 0, 0.2);
@@ -31,12 +27,12 @@ font-size: 30px;
 
 .bg-image {
     background: url('../images/griffphoto.png');
-    height: 25pc;
-    width: 20pc;
-    border-radius: 16pc;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    /* height: 25pc;
+    width: 20pc;
+    border-radius: 16pc; */
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -83,17 +79,48 @@ font-size: 30px;
 }
 
 @media screen and (min-width: 900px) {
+    .outer-img {
+        height: 20pc;
+        width: 20pc;
+        min-width: 20pc;
+        border-radius: 16pc;
+    }
+
+    .bg-image {     
+        height: 25pc;
+        width: 20pc;
+        border-radius: 16pc;
+    }
+
     .about-right {
         padding-right: 7pc;
         text-align: justify;
-    }
+            width: 50%;
+        }
 
     .about-btn-sec {
         width: 60%;
     }
+
+    .about-content button {
+        margin-bottom: 15px;
+}
 }
 
 @media screen and (max-width: 900px) {
+    .outer-img {
+        height: 10pc;
+        width: 10pc;
+        min-width: 10pc;
+        border-radius: 16pc;
+    }
+
+    .bg-image {     
+        height: 12.5pc;
+        width: 10pc;
+        border-radius: 16pc;
+    }
+
     .about-content {
         flex-direction: column;
         justify-content: space-evenly;
@@ -106,5 +133,6 @@ font-size: 30px;
 
     .about-right {
         text-align: center;
+        margin: 0 30px;
     }
 }

@@ -28,8 +28,27 @@ html {
 }
 
 .section-header {
-  font-size: 60px;
   font-weight: 900;
   text-align: center;
   z-index: 20;
+}
+
+@media screen and (max-width: 900px) {
+  .section-header {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section-header {
+    font-size: 60px;
+  }
+  
+  p {
+    /* font-size: 20px; */
+  }
 }

@@ -15,7 +15,7 @@
 
 #about {
     min-height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 900px) {
     #about {
-        padding: 5pc 0 5pc 0;
+        padding: 2pc 0 2pc 0;
     }
 
     #portfolio {
