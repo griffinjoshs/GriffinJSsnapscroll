@@ -93,7 +93,7 @@ text-shadow: none;
     }
 
     #skill {
-      font-size: 80px;
+      font-size: 70px;
     }
   
     .hero-left {
@@ -103,13 +103,13 @@ text-shadow: none;
 
   @media screen and (min-width: 1000px) and (max-width: 1200px) {
     #skill {
-      font-size: 70px;
+      font-size: 60px;
     }
   }
 
   @media screen and (min-width: 815px) and (max-width: 1000px) {
     #skill {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 
@@ -149,7 +149,6 @@ text-shadow: none;
     .hero-button-sec {
       flex-direction: column;
       justify-content: center;
-      padding-top: 30px;
     }
   }
 
