@@ -1,0 +1,40 @@
+.card-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 4pc;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30%;
+    box-shadow: 0 20px 65px #0000ff inset;
+    padding: 1pc;
+    margin: 2pc;
+    height: 15pc;
+    width: 15pc;
+    border: solid #0000ff;
+}
+
+.card:hover {
+    border: solid #0000ff 3px;
+    outline: blue;
+}
+
+.card h3 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.card h4 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}

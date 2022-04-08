@@ -1,0 +1,110 @@
+#about h3 {
+font-size: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-right: 5pc */
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-right {
+    width: 50%;
+}
+
+.outer-img {
+    height: 20pc;
+    width: 20pc;
+    min-width: 20pc;
+    border-radius: 16pc;
+    background: white;
+    position: relative;
+    box-shadow: 9px 13px 37px 2px rgba(207, 207, 207, 0.575),-8px 1px 57px 29px rgba(207, 207, 207, 0.555), inset 0 -50px 20px -20px rgba(0, 0, 0, 0.2);
+    flex-shrink: 1;
+}
+
+.bg-image {
+    background: url('../images/griffphoto.png');
+    height: 25pc;
+    width: 20pc;
+    border-radius: 16pc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-btn-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content button {
+    color: var(--textColor);
+    background: transparent;
+    border: solid var(--textColor) 1px;
+    padding: 1pc 2.5pc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.about-content button:hover {
+    transition: 1s;
+    border: solid var(--textColor) 1px;
+    color: var(--background);
+    box-shadow: inset 10.5em 0 0 0 var(--textColor);
+}
+
+.about-content p {
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+    .about-btn-sec {
+        width: 70%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-btn-sec {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .about-right {
+        padding-right: 7pc;
+        text-align: justify;
+    }
+
+    .about-btn-sec {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #about h2 {
+        padding: 30px;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+}

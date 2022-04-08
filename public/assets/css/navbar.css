@@ -1,0 +1,75 @@
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-family: "Pacifico", cursive;
+  font-size: 25px;
+  text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  filter: drop-shadow(55px -2px 30px #5e76f6);
+  cursor: pointer;
+}
+
+.nav-left h2 {
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.shape-logo {
+    filter: drop-shadow(1px -2px 30px #5e76f6);
+}
+
+/* hamburger */
+.navbar-right button {
+  background: none;
+  border: none;
+}
+
+.icon ion-icon {
+  cursor: pointer;
+  color: var(--textColor);
+  width: 4pc;
+  height: 4pc;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  position: sticky;
+  top: 0;
+}
+
+.icon ion-icon:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+  color: var(--secondaryColor);
+}
+  
+/* navbar */
+#menu {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+#menu li {
+  list-style: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--textColor);
+  width: 100vw;
+  overflow: hidden;
+  font-size: 80px;
+}
+
+#menu li:hover {
+  background: var(--primaryColor);
+  animation: colorSlide 5s;
+  cursor: pointer;
+}
+

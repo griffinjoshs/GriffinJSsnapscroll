@@ -1,0 +1,122 @@
+  .form-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    /* width: 90%; */
+  }
+  
+  #contact-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-input {
+    font-size: 20px;
+    padding: 3px 12px 6px 12px;
+    margin: 10px 2px 30px 2px;
+    border: none;
+    border-bottom: solid var(--primaryColor) 5px;
+  }
+
+/* .footer-input {
+    font-size: 15px;
+    padding: 5px 5px 5px 0;
+    margin: 5px 1px 15px 0;
+    line-height: 2pc;
+    border: none;
+    border-bottom: solid var(--primaryColor) 3px;
+  }
+
+  .modal-input {
+    font-size: 20px;
+    padding: 3px 12px 6px 12px;
+    margin: 5px 1px 15px 0;
+    border: none;
+    border-bottom: solid var(--primaryColor) 3px;
+  } */
+
+  .input {
+    background: transparent;
+    color: var(--textColor);
+    outline: none;
+    font-family: "Rubik", sans-serif;
+    padding: 0.5pc 1.2pc;
+    /* filter: drop-shadow(55px -2px 30px #5e76f6); */
+  }
+
+  
+  .input::placeholder {
+    color: var(--textColor);
+  }
+
+  .name-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+.name-section .input {
+  white-space: wrap;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgb(44, 43, 43) inset !important;
+  -webkit-text-fill-color: var(--textColor);
+}
+
+  .submit-form {
+    background: transparent;
+    border: solid var(--primaryColor) 2px;
+    height: 3pc;
+    margin: 0 auto;
+    width: 35%;
+    color: var(--primaryColor);
+    /* margin: 0 auto; */
+  }
+
+  .submit-form:hover {
+    animation: colorSlide 5s;
+    background: var(--primaryColor);
+    color: var(--textColor);
+  }
+
+  @media screen and (min-width: 900px) {
+    /* .input {
+      width: 100%;
+    } */
+    .name-section .input {
+      width: 40%;
+    }
+  
+    .form-section {
+      width: 80%;
+  }
+  }
+  
+    @media screen and (max-width: 900px) {
+      .form-section {
+        width: 70%;
+    }
+  
+    .input {
+      align-items: center;
+      justify-content: center;
+    }
+  
+      .footer-input {
+      padding: 0 40px;
+      }
+  
+      .name-section {
+        flex-direction: column;
+      }
+  
+      .name-section .input {
+        width: 100%;
+      }
+  
+      .contact-input {
+        width: 100%
+      }
+    }

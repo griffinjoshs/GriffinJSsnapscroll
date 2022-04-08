@@ -1,0 +1,68 @@
+@media screen and (max-width: 900px) {
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons, ul li {
+    list-style: none;
+  }
+
+  #about-socials, ul li {
+    margin-right: 15px;
+  }
+  
+  .social-icon, ul li a {
+    position: relative; 
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 55px;
+    background: transparent;
+    border: solid var(--textColor) 1px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--textColor);
+    transition: .5s;
+    font-size: 25px;
+  }
+  
+  .social-icon, ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--primaryColor);
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .social-icon, ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--textColor);
+  }
+  
+  .social-icon, ul li a:hover {
+    border: solid var(--primaryColor) 2px;
+    box-shadow: 0 0 5px var(--primaryColor);
+    text-shadow: 0 0 5px var(--primaryColor);
+  }
+
+  #about-socials, ul li a:hover {
+    color: var(--primaryColor);
+  }
+
+  #footer-socials, ul li a:hover {
+      color: var(--textColor);
+  }

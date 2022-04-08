@@ -1,0 +1,74 @@
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    margin: 0;
+}
+
+#header {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    overflow: hidden;
+    /* text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6); */
+}
+
+#about {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#black-sec {
+    min-height: 200vh;
+    scroll-snap-align: start;
+}
+
+#testimonials {
+    /* height: 100vh; */
+    scroll-snap-align: start;
+}
+
+#footer {
+    scroll-snap-align: end;
+}
+
+
+.color-sec {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../images/blueliquid2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+    #about {
+        padding: 5pc 0 5pc 0;
+    }
+
+    #portfolio {
+        padding: 4pc;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #about {
+        padding: 1pc 0 4pc 0;
+    }
+
+    #portfolio {
+        padding: 16pc 4pc;
+    }
+
+    /* .services {
+        height: 100vh;   
+        padding: 5pc 0 5pc 0; 
+} */
+}

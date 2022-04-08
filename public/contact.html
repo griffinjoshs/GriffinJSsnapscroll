@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./assets/media/images/Griffin-logo.png">
+      <title>Contact</title>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <link rel="stylesheet" href="./assets/css/styles.css" />
+      <link rel="stylesheet" href="./assets/css/shapes.css" />
+      <link rel="stylesheet" href="./assets/css/navbar.css" />
+      <link rel="stylesheet" href="./assets/css/contact.css" />
+      <link rel="stylesheet" href="./assets/css/input.css" />
+      <link rel="stylesheet" href="./assets/css/animation.css" />
+</head>
+<body>
+      <div id="pre-load"></div>
+      <nav></nav>
+      <div id="menu" class="hide"></div>
+        <div class="clear-for-menu">
+          <h1>Contact Me</h1>
+          <form id="contact-form">
+          <section class="form-section">
+                <!-- action="/api/subscribe" method="POST" -->
+                <div class="name-section">
+                  <input type="text" class='input contact-input' name="firstName" placeholder="First Name">
+                  <input type="text" class='input contact-input' name="lastName" placeholder="Last Name">
+                </div>
+                    <input type="email" class='input contact-input' name="email" placeholder="Email">
+                    <textarea class='input contact-input' name="message" placeholder="Message"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" class="submit-form" id="submit-contact-form">Send</button>
+            </section>
+          </form>
+            </div>
+</body>
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/navigation.js"></script>
+<script src="./assets/js/api.js"></script>
+</html>
