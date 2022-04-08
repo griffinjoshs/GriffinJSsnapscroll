@@ -37,7 +37,7 @@
   } */
 
   .input {
-    background: transparent;
+    background: rgb(44, 43, 43);
     color: var(--textColor);
     outline: none;
     font-family: "Rubik", sans-serif;
