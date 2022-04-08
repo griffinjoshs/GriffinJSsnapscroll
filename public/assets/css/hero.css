@@ -120,6 +120,10 @@ text-shadow: none;
       padding: 1pc 0 1pc 0;
     }
 
+    #spin-logo {
+      display: none;
+    }
+
     .hero-left {
       justify-content: space-evenly;
       text-align: center;
@@ -153,6 +157,10 @@ text-shadow: none;
     .hero {
       justify-content: space-evenly;
       padding: 2pc 1pc 4pc 1pc;
+    }
+
+    #spin-logo {
+      animation: roll-in-left-boom 3s ease-out both;
     }
 
     .hero-left {
