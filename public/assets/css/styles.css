@@ -33,6 +33,10 @@ html {
   z-index: 20;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .section-header {
     font-size: 40px;

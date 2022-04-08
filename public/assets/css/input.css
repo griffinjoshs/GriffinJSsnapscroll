@@ -13,35 +13,35 @@
 
   .contact-input {
     font-size: 20px;
-    padding: 3px 12px 6px 12px;
+    background: rgb(44, 43, 43);
+    padding: 0.5pc 1.2pc;
     margin: 10px 2px 30px 2px;
     border: none;
     border-bottom: solid var(--primaryColor) 5px;
   }
 
-/* .footer-input {
+.footer-input {
     font-size: 15px;
-    padding: 5px 5px 5px 0;
+    padding: 1.5px 5px 1.5px 5px;
     margin: 5px 1px 15px 0;
     line-height: 2pc;
-    border: none;
-    border-bottom: solid var(--primaryColor) 3px;
+    background: transparent;
+    border: rgb(167, 167, 167) solid 1px!important;
+    /* border-bottom: solid var(--primaryColor) 3px; */
   }
 
   .modal-input {
-    font-size: 20px;
+    font-size: 15px;
     padding: 3px 12px 6px 12px;
     margin: 5px 1px 15px 0;
     border: none;
     border-bottom: solid var(--primaryColor) 3px;
-  } */
+  }
 
   .input {
-    background: rgb(44, 43, 43);
     color: var(--textColor);
     outline: none;
     font-family: "Rubik", sans-serif;
-    padding: 0.5pc 1.2pc;
     /* filter: drop-shadow(55px -2px 30px #5e76f6); */
   }
 
