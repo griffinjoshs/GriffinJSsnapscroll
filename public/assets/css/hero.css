@@ -117,7 +117,7 @@ text-shadow: none;
   @media screen and (max-width: 815px) {
     .hero {
       /* justify-content: space-evenly; */
-      padding: 4pc 0 4pc 0;
+      padding: 1pc 0 1pc 0;
     }
 
     .hero-left {
