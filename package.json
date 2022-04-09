@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/griffinjoshs/GriffinSurett.git"
+    "url": "git+https://github.com/griffinjoshs/GriffinJS.git"
   },
   "author": "Griffin Surett",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/griffinjoshs/GriffinSurett/issues"
+    "url": "https://github.com/griffinjoshs/GriffinJS/issues"
   },
-  "homepage": "https://github.com/griffinjoshs/GriffinSurett#readme",
+  "homepage": "https://github.com/griffinjoshs/GriffinJS/#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
