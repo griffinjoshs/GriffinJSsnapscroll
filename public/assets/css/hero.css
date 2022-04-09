@@ -47,7 +47,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  flex-direction: row-reverse;
 }
 
 .hero-button-sec h5 {
@@ -182,23 +181,16 @@ text-shadow: none;
     }
 
     .hero h1 {
-      padding-top: 2pc;
+      padding: 4pc 0 4pc 0;
     }
 
     #skill {
-      padding: 1pc 0 0.5pc 0;
       white-space: no-wrap; /* Keeps the content on a single line */
     }
 
-    .hero h5 {
-      padding: 3pc 0 3pc 0;
-      text-align: right;
-    }
-
     .hero-button-sec {
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 1pc;
+      /* justify-content: space-between;
+      align-items: flex-start; */
       width: 70%;
     }
   }
