@@ -23,6 +23,8 @@ nav {
 .nav-right {
     display: flex;
     align-items: center;
+    filter: drop-shadow(1px -2px 30px #5e76f6);
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
 }
 
 .shape-logo {
@@ -43,6 +45,8 @@ nav {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   position: sticky;
   top: 0;
+  filter: drop-shadow(1px -2px 30px #5e76f6);
+    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
 }
 
 .icon ion-icon:hover {

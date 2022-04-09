@@ -42,9 +42,13 @@
     color: var(--textColor);
     outline: none;
     font-family: "Rubik", sans-serif;
+    transition: 1.5s;
     /* filter: drop-shadow(55px -2px 30px #5e76f6); */
   }
 
+  .input:active {
+    box-shadow: 0 0 20px 16px var(--primaryColor);
+  }
   
   .input::placeholder {
     color: var(--textColor);
