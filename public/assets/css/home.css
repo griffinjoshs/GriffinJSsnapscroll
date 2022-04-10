@@ -9,8 +9,8 @@
     min-height: 100vh;
     scroll-snap-align: start;
     overflow: hidden;
-    /* text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-    filter: drop-shadow(55px -2px 30px #5e76f6); */
+    text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    filter: drop-shadow(55px -2px 30px #5e76f6)
 }
 
 #about {

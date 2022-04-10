@@ -54,27 +54,11 @@
 }
 
 .hero-button-sec button {
-margin: 0 10px 0 10px;
-padding: 18px 40px;
-color: var(--textColor);
-background: transparent;
-border: solid var(--textColor) 1px;
-cursor: pointer;
-font-size: 15px;
-font-weight: bold;
-z-index: 20;
-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
     filter: drop-shadow(55px -2px 30px #5e76f6)
 }
 
-.hero-button-sec button:hover {
-transition: 1s;
-border: solid var(--textColor);
-color: var(--background);
-box-shadow: inset 10.5em 0 0 0 var(--textColor);
-text-shadow: none;
-}
+
 
 #spin-logo {
   position: absolute;

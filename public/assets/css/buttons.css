@@ -1,0 +1,18 @@
+.square-btn {
+  padding: 18px 40px;
+  color: var(--textColor);
+  background: transparent;
+  border: solid var(--textColor) 1px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 20;
+  }
+  
+  .square-btn:hover {
+  transition: 1s;
+  border: solid var(--textColor);
+  color: var(--background);
+  box-shadow: inset 10.5em 0 0 0 var(--textColor);
+  text-shadow: none;
+  }

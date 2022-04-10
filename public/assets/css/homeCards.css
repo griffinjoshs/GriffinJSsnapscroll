@@ -29,7 +29,7 @@
     background: #000;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 15px 60px rgba(128,128,128,0.96);;
+    box-shadow: 0 7px 30px var(--primaryColor);
     cursor: pointer;
 }
 
@@ -76,9 +76,9 @@
     /* flex-direction: column; */
 }
 
-.card-container .service-card:hover {
+/* .card-container .service-card:hover {
     box-shadow: 0 15px 60px rgba(128,128,128,0.96);;
-}
+} */
 
  .card-container .service-card:hover .face.face2 {
     height: 60px;
