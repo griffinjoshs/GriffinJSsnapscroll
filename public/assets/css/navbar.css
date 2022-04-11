@@ -69,6 +69,7 @@ nav {
   width: 100vw;
   overflow: hidden;
   font-size: 80px;
+  text-shadow: none;
 }
 
 #menu li:hover {

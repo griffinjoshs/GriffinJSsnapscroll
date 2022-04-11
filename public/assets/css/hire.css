@@ -30,7 +30,6 @@
 #hire-header p {
   font-size: 20px;
   line-height: 1.5;
-  padding: 0 5pc;
 }
 
 .hire-hero {
@@ -172,7 +171,7 @@
     margin: 2pc 4pc;
   }
 
-  #hire-header p {
-    padding: 0 15pc;
+  .hire-hero p {
+    padding: 0 5pc;
   }
 }
