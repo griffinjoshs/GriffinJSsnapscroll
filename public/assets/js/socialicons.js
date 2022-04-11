@@ -15,7 +15,8 @@ const socialContent = [
     link: "https://github.com/griffinjoshs",
   },
 ];
-const socialsSections = document.getElementsByClassName("social-icons");
+const socialsSections = document.querySelectorAll("social-icons");
+// const socialsSections = Array.from(document.querySelectorAll("social-icons"));
 
 const socialMediaIcons = () => {
   const icons = socialContent.map(

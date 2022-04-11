@@ -1,99 +1,103 @@
-
 .scroll-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  margin: 0;
 }
 
 /* header */
 
 #hire-header {
-    height: 100vh;
-    min-height: 100vh;
-    scroll-snap-align: start;
-    overflow: hidden;
-    text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-    filter: drop-shadow(55px -2px 30px #5e76f6);
-    text-align: center;
+  height: 100vh;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+  text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
+    6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  filter: drop-shadow(55px -2px 30px #5e76f6);
+  text-align: center;
 }
 
 #hire-header h1 {
-    font-size: 85px;
+  font-size: 75px;
 }
 
 #hire-header h4 {
-    font-size: 25px;
-    padding-bottom: 3pc;
+  font-size: 25px;
+  padding-bottom: 3pc;
 }
 
 #hire-header p {
-    font-size: 20px;
-    padding: 0 15pc;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0 15pc;
 }
 
 .hire-hero {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #form-section {
-    height: 100vh;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    scroll-snap-align: start;
-    background: url('../images/blueliquid2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: url("../images/blueliquid2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hire-form {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin: auto 0;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: auto 0;
+  justify-content: center;
 }
 
 .name-info {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #questionare {
-    display: flex;
-justify-content: center;
-align-items: center;
-    height: 100vh;
-    min-height: 100vh;
-    /* width: 80%; */
-    scroll-snap-align: start;
-    margin: 0 auto;
-    align-self: center;
-    text-align: justify;
-    padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  /* width: 80%; */
+  scroll-snap-align: start;
+  margin: 0 auto;
+  align-self: center;
+  text-align: justify;
+  padding-bottom: 40px;
 }
 
 .questions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-    filter: drop-shadow(55px -2px 30px #5e76f6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
+    6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  filter: drop-shadow(55px -2px 30px #5e76f6);
+  line-height: 1.5;
 }
 
-.questions, .section-header {
-    padding: 0;
-    margin: 0;
+.questions,
+.section-header {
+  padding: 0;
+  margin: 0;
 }
 
 .questions h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .form-space {
-    padding: 2pc 0;
+  padding: 2pc 0;
 }
 
 /* .mc-question {
@@ -103,38 +107,33 @@ align-items: center;
 } */
 
 .checkbox-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .checkbox-section input[type="checkbox"] {
-    padding-right: 30px;
-}
-
-.hire-form textarea {
-    margin: 0;
+  padding-right: 30px;
 }
 
 #submit-hire-form {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
-.hire-left {
+  .hire-left {
     display: none;
-}
-    
-    #form-section .input {
-        /* margin: 2pc 4pc; */
-        width: 100%;
-    }
   }
+
+  #form-section .input {
+    /* margin: 2pc 4pc; */
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 900px) {
-    #form-section .input {
-        margin: 2pc 4pc;
-    }
+  #form-section .input {
+    margin: 2pc 4pc;
   }
-
+}

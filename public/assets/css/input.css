@@ -13,11 +13,22 @@
 
   .contact-input {
     font-size: 20px;
-    background: rgb(44, 43, 43);
+    background: transparent;
+    border: solid 0.5px var(--textColor);
     padding: 0.5pc 1.2pc;
     margin: 10px 2px 30px 2px;
-    border: none;
-    border-bottom: solid var(--primaryColor) 5px;
+    /* border: none; */
+    /* border-bottom: solid var(--primaryColor) 5px; */
+  }
+
+  .hire-input {
+    background: transparent;
+    border: solid 0.5px var(--textColor);
+  }
+
+  .hire-input textarea {
+    padding: 10px 20px;
+    margin-bottom: 30px;
   }
 
 .footer-input {
@@ -44,6 +55,10 @@
     font-family: "Rubik", sans-serif;
     transition: 1.5s;
     /* filter: drop-shadow(55px -2px 30px #5e76f6); */
+  }
+
+  .contact-input:active {
+    border: solid 1px var(--textColor);
   }
 
   .input:active {
