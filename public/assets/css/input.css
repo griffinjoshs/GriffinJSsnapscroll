@@ -122,6 +122,10 @@ input:-webkit-autofill {
       align-items: center;
       justify-content: center;
     }
+    
+    .hire-input {
+      margin: 0 5pc;
+    }
   
       .footer-input {
       padding: 0 40px;
@@ -131,9 +135,9 @@ input:-webkit-autofill {
         flex-direction: column;
       }
   
-      .name-section .input {
+      /* .name-section .input {
         width: 100%;
-      }
+      } */
   
       /* .contact-input {
         width: 100%

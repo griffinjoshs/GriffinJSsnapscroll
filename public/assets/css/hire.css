@@ -30,12 +30,13 @@
 #hire-header p {
   font-size: 20px;
   line-height: 1.5;
-  padding: 0 15pc;
+  padding: 0 5pc;
 }
 
 .hire-hero {
   display: flex;
   justify-content: space-evenly;
+  align-self: center;
 }
 
 #form-section {
@@ -126,14 +127,52 @@
     display: none;
   }
 
-  #form-section .input {
-    /* margin: 2pc 4pc; */
-    width: 100%;
+  .hire-right {
+      text-align: center;
   }
+
+  #questionare {
+    height: 150vh;
+}
+
+/* #questionare, textarea {
+    margin: 4pc;
+} */
+
+  /* #form-section {
+      text-align: center;
+      display: flex;
+      
+  } */
+
+  #form-section .input, .name-section .input {
+    margin: 2pc 4pc;
+  }
+
+  #hire-header p {
+    padding: 0 3pc;
+  }
+
+  #questionare {
+      text-align: center;
+  }
+
+  .checkbox-section {
+      padding: 0 4pc;
+  }
+
+
+#submit-hire-form {
+    margin-bottom: 4pc;
+}
 }
 
 @media screen and (min-width: 900px) {
   #form-section .input {
     margin: 2pc 4pc;
+  }
+
+  #hire-header p {
+    padding: 0 15pc;
   }
 }
