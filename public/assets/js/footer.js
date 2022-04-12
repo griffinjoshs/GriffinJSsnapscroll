@@ -1,4 +1,5 @@
 const footer = document.getElementById('footer')
+const email = document.getElementById('user-email')
 
 const loadFooter = () => {
     footer.innerHTML += 
@@ -25,7 +26,7 @@ const loadFooter = () => {
       <div class="footer-menu">
         <h3>Subscribe</h3>
         <div id="footer-form">
-          <input type="email" class="input footer-input" placeholder="email address" id="userEmail">
+          <input type="email" class="input footer-input" placeholder="email address" id="user-email">
           <button type="button" onclick="showModal()">Subscribe</button>
       </div>
     </div>

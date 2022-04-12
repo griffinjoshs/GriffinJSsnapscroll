@@ -38,7 +38,7 @@
     cursor: pointer;
   }
 
-  .modal-form {
+  #modal-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@
    border-radius: 10%;
 }
 
-.modal-form-sec {
+#modal-form-sec {
  display: flex;
  justify-content: center;
  align-items: center;                       
@@ -78,14 +78,14 @@
     border-radius: 60%;
 }
 
-.modal-form {
+#modal-form {
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.modal-form button {
+#modal-form button {
     background: transparent;
     border: solid var(--textColor) 1px;
     color: var(--textColor);
@@ -94,7 +94,7 @@
     align-self: center;
 }
 
-.modal-form button:hover {
+#modal-form button:hover {
     transition: 1s;
     border: solid var(--textColor);
     color: var(--background);

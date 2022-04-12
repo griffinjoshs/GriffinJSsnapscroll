@@ -25,7 +25,7 @@ const subscriberSchema = new Schema({
   message: {
     type: String,
     trim: true,
-    required: "message is required"
+    // required: "message is required"
   }, 
 },
 { timestamps: true }

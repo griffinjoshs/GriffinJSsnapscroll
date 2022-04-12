@@ -47,41 +47,38 @@
     </section>
     <section id="questionare">
       <div class="questions">
-      <form id="hire-form">
+      <form name='form' id="hire-form">
         <div class="form-space"></div>
         <div class="mc-question">
           <h4>Are you an Individual or a Business?</h4>
-  <input type="radio" name="person">Person<br>
-  <input type="radio" name="business">Business<br>
+  <input type="radio" name="checkbox" id="business" value="business">
+  <label for="business">Business</label><br>
+  <input type="radio" name="checkbox" id="person" value="person">
+  <label for="person">Person</label><br>
         </div>
         <div class="form-space"></div>
         <div class="checkbox-section">
           <h4>Check off whatever you would like me to do for you</h4>
-          <div>
-            <input type="checkbox" class="checkbox" id="newWebsite" name="newWebsite" />
+            <input type="checkbox" class="checkbox" id="newWebsite" name="boxes2" value="newWebsite"/>
             <label for="newWebsite">Build Me A brand New Website</label>
-          </div>
-          <div>
-            <input type="checkbox" class="checkbox" id="existingWebsite" name="existingWebsite" />
+            <input type="checkbox" class="checkbox" id="existingWebsite" name="boxes2" value="existingWebsite"/>
             <label for="existingWebsite">Fix My Existing Website</label>
-          </div>
           <div>
-            <input type="checkbox" class="checkbox" value="createMarketing" id="createMarketing" name="createMarketing"
-              checked />
+            <input type="checkbox" class="checkbox" value="createMarketing" id="createMarketing" name="createMarketing" value="createMarketing" />
             <label for="createMarketing">Help Create a Successful Marketing Strategy for my Business</label>
           </div>
           <div>
-            <input type="checkbox" class="checkbox" id="logoDesign" name="logoDesign" />
+            <input type="checkbox" class="checkbox" id="logoDesign" name="logoDesign" value="logoDesign"/>
             <label for="logoDesign">Design Me A Logo</label>
           </div>
         </div>
         <div class="form-space"></div>
-        <textarea class="input hire-input" placeholder="Anything Else"></textarea>
+        <textarea class="input hire-input" placeholder="Anything Else" name="message"></textarea>
         <div class="form-space"></div>
         <button type="submit" class="submit-form" id="submit-hire-form">Send</button>
-      </div>
+    </form>
+  </div>
       </section>
-      </form>
   </div>
 </body>
 <script src="./assets/js/navbar.js"></script>

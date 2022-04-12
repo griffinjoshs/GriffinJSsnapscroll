@@ -174,4 +174,8 @@
   .hire-hero p {
     padding: 0 5pc;
   }
+
+  .hire-right {
+    align-self: center
+  }
 }
