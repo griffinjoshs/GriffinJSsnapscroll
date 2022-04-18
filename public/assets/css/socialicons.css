@@ -66,3 +66,7 @@
   #footer-socials, ul li a:hover {
       color: var(--textColor);
   }
+
+  /* #contact-socials ul, li {
+    margin-right: 15px;
+  } */

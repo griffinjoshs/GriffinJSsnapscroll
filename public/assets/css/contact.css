@@ -1,5 +1,8 @@
 /* Contact Page */
 /* rest of styles is on the input.css */
+body {
+  overflow: visible;
+}
 
 h1 {
   font-size: 50px;
@@ -21,8 +24,17 @@ h1 {
   z-index: -10;
   
 }
-  
 
+.contact-btn-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  
+.contact-btn-area ul {
+  display: flex;
+}
 
 @media screen and (min-width: 900px) {
   

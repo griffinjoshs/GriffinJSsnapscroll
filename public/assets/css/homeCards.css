@@ -58,7 +58,7 @@
  .card-container .service-card .face.face2 {
     transition: 0.5s;
     background-color: var(--primaryColor);
-    background: url('../images/blueliquid2.jpg');
+    background-image: url("../images/blueliquid2.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

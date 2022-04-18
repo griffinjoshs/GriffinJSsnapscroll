@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="./assets/css/contact.css" />
       <link rel="stylesheet" href="./assets/css/input.css" />
       <link rel="stylesheet" href="./assets/css/animation.css" />
+      <link rel="stylesheet" href="./assets/css/socialicons.css" />
 </head>
 <body>
       <div id="pre-load"></div>
@@ -26,23 +27,27 @@
       <div id="menu" class="hide"></div>
         <div class="clear-for-menu">
           <h1>Contact Me</h1>
-          <form name="form" id="contact-form">
+          <form name="form" id="contact-form" action="/api/subscribe" method="POST">
           <section class="form-section">
-                <!-- action="/api/subscribe" method="POST" -->
                 <div class="name-section">
-                  <input type="text" class='input contact-input' name="firstName" id="firstName" placeholder="First Name">
-                  <input type="text" class='input contact-input' name="lastName" id="lastName" placeholder="Last Name">
+                  <input type="text" class='input contact-input' name="firstName" id="firstName" placeholder="First Name" required>
+                  <input type="text" class='input contact-input' name="lastName" id="lastName" placeholder="Last Name" required>
                 </div>
-                    <input type="email" class='input contact-input' name="email" id="email" placeholder="Email">
-                    <textarea class='input contact-input' name="message" id="message" placeholder="Message"></textarea>
+                    <input type="email" class='input contact-input' name="email" id="email" placeholder="Email" required>
+                    <textarea class='input contact-input' name="message" id="message" placeholder="Message" required></textarea>
                     <br>
                     <br>
+                    <div class="contact-btn-area">
                     <button type="submit" class="submit-form" id="submit-contact-form">Send</button>
+                    <div class="form-space"></div>
+                    <ul class="social-icons" id="contact-socials"></ul>
+                  </div>
             </section>
           </form>
             </div>
 </body>
 <script src="./assets/js/navbar.js"></script>
 <script src="./assets/js/navigation.js"></script>
-<script src="./assets/js/api.js"></script>
+<!-- <script src="./assets/js/api.js"></script> -->
+<script src="./assets/js/socialicons.js"></script>
 </html>

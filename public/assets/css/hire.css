@@ -44,7 +44,7 @@
   width: 100%;
   overflow: hidden;
   scroll-snap-align: start;
-  background: url("../images/blueliquid2.jpg");
+  background-image: url("../images/blueliquid2.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -94,10 +94,6 @@
 
 .questions h4 {
   font-size: 30px;
-}
-
-.form-space {
-  padding: 2pc 0;
 }
 
 /* .mc-question {

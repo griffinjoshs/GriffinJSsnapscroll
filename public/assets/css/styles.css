@@ -33,6 +33,10 @@ html {
   z-index: 20;
 }
 
+.form-space {
+  padding: 2pc 0;
+}
+
 button:hover {
   cursor: pointer;
 }

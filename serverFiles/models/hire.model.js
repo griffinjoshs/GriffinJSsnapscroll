@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const subscriberSchema = new Schema({
+const hireSchema = new Schema({
   // CODE HERE
   firstName: {
     type: String,
@@ -22,6 +22,16 @@ const subscriberSchema = new Schema({
     required: "email is required"
   },
 
+  contactType: {
+      type: String,
+      required: "Contact Type Required"
+  },
+
+  serviceType: {
+    type: Array,
+    required: "Service Type Required"
+  },
+
   message: {
     type: String,
     trim: true,
@@ -31,4 +41,4 @@ const subscriberSchema = new Schema({
 { timestamps: true }
 );
 
-module.exports.Subscriber = mongoose.model("Subscriber", subscriberSchema);
+module.exports.Inquiry = mongoose.model("Inquiry", hireSchema);

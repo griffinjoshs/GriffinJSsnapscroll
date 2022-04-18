@@ -16,3 +16,19 @@
   box-shadow: inset 10.5em 0 0 0 var(--textColor);
   text-shadow: none;
   }
+
+  /* #hero-btn:hover {
+    transition: .5s;
+    border: solid var(--textColor);
+    color: var(--background);
+    box-shadow: inset 10.5em 0 0 0 var(--textColor);
+    text-shadow: none;
+  }
+
+  #about-btn:hover {
+    transition: width 1s;
+    border: solid var(--textColor);
+    color: var(--background);
+    box-shadow: inset 100vw 0 0 0 var(--textColor);
+    text-shadow: none;
+  }  */

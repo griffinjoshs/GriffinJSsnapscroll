@@ -89,7 +89,6 @@ input:-webkit-autofill {
     background: transparent;
     border: solid var(--primaryColor) 2px;
     height: 3pc;
-    margin: 0 auto;
     width: 35%;
     color: var(--primaryColor);
     /* margin: 0 auto; */
