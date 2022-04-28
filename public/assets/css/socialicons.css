@@ -6,6 +6,8 @@
 
 .social-icons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     list-style: none;
     padding: 0;
 }
@@ -14,10 +16,6 @@
     list-style: none;
   }
 
-  #about-socials, ul li {
-    margin-right: 15px;
-  }
-  
   .social-icon, ul li a {
     position: relative; 
     display: block;
@@ -32,6 +30,7 @@
     color: var(--textColor);
     transition: .5s;
     font-size: 25px;
+    margin: 0 10px;
   }
   
   .social-icon, ul li a::before {

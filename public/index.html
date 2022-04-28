@@ -9,18 +9,12 @@
    <link rel="stylesheet" href="./assets/css/styles.css"/>
    <link rel="stylesheet" href="./assets/css/home.css"/>
    <link rel="stylesheet" href="./assets/css/navbar.css"/>
+   <link rel="stylesheet" href="./assets/css/preloader.css"/>
    <link rel="stylesheet" href="./assets/css/hero.css"/>
    <link rel="stylesheet" href="./assets/css/animation.css"/>
    <link rel="stylesheet" href="./assets/css/shapes.css"/>
   <body>
-    <!-- <div id="pre-load"></div> -->
-    <div class="big-shape-logo" id="spin-logo">
-      <div class="big-shape-circle">
-        <div class="big-shape-square">
-          <div class="big-shape-diamond"></div>
-        </div>
-      </div>
-    </div>
+    <div class="loader-bg" id="pre-load" onload='setBackground()'></div>
     <div class="scroll-container">
       <section id="header">
         <header>
@@ -29,6 +23,7 @@
             <div class="clear-for-menu">
           <div class="hero">
             <div class="hero-left">
+              <div class="hero-headers">
                 <h1>
                     <span id="myName">
                         Hi, I'm Griffin!<br>
@@ -37,8 +32,10 @@
                       Let Me Build Your Dream Website
                     </span>
                 </h1>
+              </div>
                     <div class="hero-button-sec">
-                      <button class="square-btn" id="hero-btn" onclick="goToHire()">Hire Me</button> 
+                      <button class="square-btn hero-btn">Hire Me</button>
+                      <!-- <button class="square-btn" id="hero-btn" onclick="goToHire()">Hire Me</button>  -->
             </div>
           </div>
             <div class="hero-right">
@@ -64,7 +61,6 @@
           <div class="about-right">
             <h3>My Story</h3>
             <p>My name is Griffin, as a child of the digital age I am very sound in all things online. I am a 22 year old college student from New Jersey that specializes in Web Development as well as digital marketing. I have over 3 years of building web sites, logo-designing and running various different digital campaigns. However, things took a big turn when I learned how to code over the course of the long and drawn out Covid period. I am now well versed in HTML, CSS, and JavaScript as well as different libraries and frameworks.</p>
-          <br>
           <div class="about-btn-sec">
             <button class="square-btn" id="about-btn" onclick="goToHire()">Hire Me</button>
             <br>
@@ -91,6 +87,7 @@
       <div id="myModal" class="modal hide">
     </div>
     </div>
+    </div>
   </body>
   <link rel="stylesheet" href="./assets/css/modal.css"/>
   <link rel="stylesheet" href="./assets/css/buttons.css"/>
@@ -107,7 +104,7 @@
   <script src="./assets/js/portfolio.js"></script>
   <script src="./assets/js/modal.js"></script>
   <!-- <script src="./assets/js/api.js"></script> -->
-  <!-- <script src="./assets/js/preloader.js"></script> -->
+  <script src="./assets/js/preloader.js"></script>
   <script src="./assets/js/footer.js"></script>
   <script src="./assets/js/testimonials.js"></script>
   <script src="./assets/js/socialicons.js"></script>

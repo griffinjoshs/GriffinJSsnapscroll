@@ -36,6 +36,10 @@
     }
   }
 
+  .roll-in-left-boom {
+    animation: roll-in-left-boom 3s ease-out both;
+  }
+
   @keyframes roll-in-left-boom {
     0% {
       transform: translateX(-800px) rotate(-540deg);
