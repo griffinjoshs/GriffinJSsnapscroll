@@ -1,24 +1,32 @@
-const navbar = document.querySelector('nav')
-const menu = document.getElementById('menu')
-const hamburgerIcon = "<ion-icon name='menu-outline' onclick='displayMenu()'></ion-icon>"
-const closeIcon = "<ion-icon name='close-outline' onclick='exitMenu()'></ion-icon>"
-const scrollTopIcon = '<ion-icon name="arrow-up-circle-outline"></ion-icon>'
+const navbar = document.querySelector("nav");
+const menu = document.getElementById("menu");
+const hamburgerIcon =
+  "<ion-icon name='menu-outline' onclick='displayMenu()'></ion-icon>";
+const closeIcon =
+  "<ion-icon name='close-outline' onclick='exitMenu()'></ion-icon>";
+const scrollTopIcon = '<ion-icon name="arrow-up-circle-outline"></ion-icon>';
+
+window.onload = function () {
+  console.log(window);
+  window.onscroll = function () {
+    console.log("eferwefwe");
+    if (window.scrollY > 300) {
+      navbar.classList.add("nav-active");
+    } else {
+      navbar.classList.remove("nav-active");
+    }
+  };
+};
 
 const loadnav = () => {
-    navbar.innerHTML += `
+  navbar.innerHTML += `
     <div class="nav-left" onclick='backHome()'>
-    <div class="shape-logo">
-        <div class="circle">
-          <div class="square">
-            <div class="diamond"></div>
-          </div>
-        </div>
-      </div>
+      <img src="./assets/images/grifflogobold.svg" height="80" width="80" style='margin-right: 5px;'>
       <div class="name-logo">
           <h2>Griffin</h2>
       </div>
   </div>
-  <div class="navbar-right">
+  <div class="nav-right">
  <button class='icon' id='hamburger'>
  ${hamburgerIcon}
  </button>
@@ -28,19 +36,17 @@ const loadnav = () => {
  <button class='icon hide' id='scrollTop'>
  ${scrollTopIcon}
  </button>
- </div>`
-}
+ </div>`;
+};
 
 const loadMenu = () => {
- menu.innerHTML += 
- `<ul>
+  menu.innerHTML += `<ul>
    <li onclick='backHome()'>Home</li>
    <li onclick='goToContact()'>Contact</li>
    <li onclick='goToHire()'>Hire Me</li>
    <li onclick='goToServices()'>Services</li>
- </ul>`
-}
+ </ul>`;
+};
 
-  loadnav()
-  loadMenu()
-  
+loadnav();
+loadMenu();

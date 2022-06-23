@@ -18,7 +18,7 @@ html {
     margin: 0;
     background-color: var(--background);
     color: var(--textColor);
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: "Righteous", cursive;
     position: relative;
 }
@@ -34,7 +34,7 @@ html {
 }
 
 .form-space {
-  padding: 2pc 0;
+  padding: 1pc 0;
 }
 
 button:hover {

@@ -1,39 +1,57 @@
 /* Navbar */
+header {
+  position: relative;
+}
+
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    filter: drop-shadow(55px -2px 30px #5e76f6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  /* filter: drop-shadow(55px -2px 30px #5e76f6); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-active {
+  background-color: var(--primaryColor);
 }
 
 .nav-left {
-    display: flex;
-    align-items: center;
-    font-family: "Pacifico", cursive;
+  display: flex;
+  align-items: center;
+  font-family: "Pacifico", cursive;
   font-size: 25px;
-  text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6,
+    -2px -5px 10px #5e76f6;
   filter: drop-shadow(55px -2px 30px #5e76f6);
   cursor: pointer;
+  margin-left: 15px;
+}
+
+.nav-left img {
+  filter: drop-shadow(2px -9px 8px var(--primaryColor));
+  /* box-shadow: 2px -9px 8px var(--primaryColor); */
 }
 
 .nav-left h2 {
-    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
 
 .nav-right {
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(1px -2px 30px #5e76f6);
-    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }
 
 .shape-logo {
-    filter: drop-shadow(1px -2px 30px #5e76f6);
+  filter: drop-shadow(1px -2px 30px #5e76f6);
 }
 
 /* hamburger */
-.navbar-right button {
+.nav-right button {
   background: none;
   border: none;
 }
@@ -47,18 +65,19 @@ nav {
   position: sticky;
   top: 0;
   filter: drop-shadow(1px -2px 30px #5e76f6);
-    text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+  text-shadow: 5px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6,
+    -2px -5px 10px #5e76f6;
 }
 
 .icon ion-icon:hover {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
   color: var(--secondaryColor);
 }
-  
+
 /* navbar */
 #menu {
   overflow: hidden;
-  padding: 40px 0;
+  padding-top: 180px;
 }
 
 #menu li {
@@ -75,7 +94,6 @@ nav {
 
 #menu li:hover {
   background: var(--primaryColor);
-  animation: colorSlide 5s;
+  animation: colorSlide 1s;
   cursor: pointer;
 }
-

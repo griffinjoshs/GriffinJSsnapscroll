@@ -30,7 +30,7 @@ setTimeout(() => {
     document.getElementById('hamburger').classList.add('hide')
   document.getElementById('close').classList.remove('hide')
   resetAnimation()
-}, 4500)
+}, 2200)
   }
 
 const exitMenu = () => {
@@ -41,7 +41,7 @@ const exitMenu = () => {
         document.getElementById('close').classList.add('hide')
         clearArea.forEach(showUnderMenu)
         resetAnimation()
-    }, 4500)
+    }, 2100)
 }
   
   const goToPage = (link) => {
@@ -52,7 +52,7 @@ const exitMenu = () => {
       document.querySelector('.icon').classList.remove('spin')
     resetAnimation()
       window.location.href= link;
-    }, 4500)
+    }, 2100)
   }
 
   const backHome = () => {
@@ -60,7 +60,7 @@ const exitMenu = () => {
     PageSwitchAnimation()
     setTimeout(() => {
       window.location.href="/";
-    }, 4500)
+    }, 2100)
   }
   
   const goToContact = () => {

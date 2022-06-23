@@ -91,6 +91,7 @@ input:-webkit-autofill {
     height: 3pc;
     width: 35%;
     color: var(--primaryColor);
+    font-size: 18px;
     /* margin: 0 auto; */
   }
 

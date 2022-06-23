@@ -1,11 +1,18 @@
 .loader-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: var(--primaryColor);
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    transition: 1s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--primaryColor);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: 1s;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-bg img {
+  animation: roll-in-left-boom 3s ease-out both;
 }

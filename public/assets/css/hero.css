@@ -1,5 +1,6 @@
 /* hero */
 .hero {
+  padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -101,7 +102,7 @@ text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6,
     .hero {
       justify-content: space-evenly;
       align-items: center;
-      padding: 1pc 0 1pc 0;
+      padding: 12pc 0 1pc 0;
     }
 
     #spin-logo {
@@ -143,7 +144,7 @@ text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6,
   @media screen and (min-width: 815px) {
     .hero {
       justify-content: space-evenly;
-      padding: 2pc 1pc 4pc 1pc;
+      padding: 8pc 1pc 4pc 1pc;
     }
 
     /* #spin-logo {

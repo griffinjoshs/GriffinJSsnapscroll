@@ -1,6 +1,6 @@
 /* color slide animation */
 .color-slide {
-    animation: colorSlide 5s;
+    animation: colorSlide 2.5s;
   }
 
 @keyframes colorSlide {

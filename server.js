@@ -18,6 +18,7 @@ app.use(express.static(__dirname + '/public'));
 
 require("./serverFiles/routes/htmlroutes")(app)
 require('./serverFiles/routes/subscribe.routes')(app)
+require('./serverFiles/routes/hire.routes')(app)
 
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://localhost/griffinsurettDb", {

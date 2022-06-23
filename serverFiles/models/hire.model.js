@@ -22,7 +22,7 @@ const hireSchema = new Schema({
     required: "email is required"
   },
 
-  contactType: {
+  hireRadio: {
       type: String,
       required: "Contact Type Required"
   },

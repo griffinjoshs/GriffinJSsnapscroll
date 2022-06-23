@@ -24,7 +24,7 @@
       <div class="clear-for-menu">
         <div class="hire-hero">
       <div class="hire-left">
-        <img src='./assets/images/griffin-flipped.png' width="400">
+        <img src='./assets/images/griffin-flipped.png' width="auto" height="600">
       </div>
       <div class="hire-right">
         <h1>Hire Me</h1>
@@ -35,43 +35,48 @@
       </div>
     </div>
     </section>
-    <form name='form' id="hire-form" action="" onsubmit="hiresubmit(this)">
+    <form name='form' id="hire-form" action="/api/hire" method="POST">
     <section id="form-section" class="form-section">
       <h2 class="section-header">Questionare</h2>
       <div class="name-section">
-        <input type="text" class='input contact-input' name="firstName" placeholder="First Name" required>
-        <input type="text" class='input contact-input' name="lastName" placeholder="Last Name" required>
+        <input type="text" class='input contact-input' name="firstName" id="firstName" placeholder="First Name" required>
+        <input type="text" class='input contact-input' name="lastName" id="lastName" placeholder="Last Name" required>
       </div>
-      <input type="text" class='input contact-input' name="email" placeholder="Email" required>
-    </section>
-    <section id="questionare">
+      <input type="text" class='input contact-input' name="email" id="email" placeholder="Email" required>
+    <!-- </section>
+    <section id="questionare"> -->
       <div class="questions">
         <div class="form-space"></div>
         <div class="mc-question">
           <h4>Are you an Individual or a Business?</h4>
   <input type="radio" name="hireRadio" id="business" value="business">
   <label for="business">Business</label><br>
-  <input type="radio" name="hireRadio" id="person" value="person">
-  <label for="person">Person</label><br>
+  <input type="radio" name="hireRadio" id="individual" value="individual">
+  <label for="person">Individual</label><br>
         </div>
         <div class="form-space"></div>
         <div class="checkbox-section">
           <h4>Check off whatever you would like me to do for you</h4>
-            <input type="checkbox" class="checkbox" id="newWebsite" name="boxes2" value="newWebsite" />
-            <label for="newWebsite">Build Me A brand New Website</label>
-            <input type="checkbox" class="checkbox" id="existingWebsite" name="boxes2" value="existingWebsite" />
-            <label for="existingWebsite">Fix My Existing Website</label>
           <div>
-            <input type="checkbox" class="checkbox" value="createMarketing" id="createMarketing" name="createMarketing" value="createMarketing" />
+            <input type="checkbox" class="checkbox" id="newWebsite" name="serviceType" value="newWebsite" />
+            <label for="newWebsite">Build Me A brand New Website</label>
+            </div>
+            <div>
+            <input type="checkbox" class="checkbox" id="existingWebsite" name="serviceType" value="existingWebsite" />
+            <label for="existingWebsite">Fix My Existing Website</label>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox" value="createMarketing" id="createMarketing" name="serviceType" value="createMarketing" />
             <label for="createMarketing">Help Create a Successful Marketing Strategy for my Business</label>
           </div>
           <div>
-            <input type="checkbox" class="checkbox" id="logoDesign" name="logoDesign" value="logoDesign" />
+            <input type="checkbox" class="checkbox" id="logoDesign" name="serviceType" value="logoDesign" />
             <label for="logoDesign">Design Me A Logo</label>
           </div>
         </div>
         <div class="form-space"></div>
-        <textarea class="input hire-input" placeholder="Anything Else" name="message"></textarea>
+        <div class="form-space"></div>
+        <textarea class="input contact-input" id="message" placeholder="Anything Else" name="message" rows="4" cols="50"></textarea>
         <div class="form-space"></div>
         <button type="submit" class="submit-form" id="submit-hire-form">Send</button>
   </div>
@@ -80,7 +85,7 @@
   </div>
 </body>
 <script src="./assets/js/navbar.js"></script>
-<script src="./assets/js/hire-api.js"></script>
+<script src="./assets/js/hire.js"></script>
 <script src="./assets/js/navigation.js"></script>
 
 </html>
