@@ -1,17 +1,17 @@
 const socialContent = [
   {
     platform: "LinkedIn",
-    icon: '<i class="fa-brands fa-linkedin-in"></i>',
+    icon: '<i class="fab fa-linkedin-in"></i>',
     link: "https://www.linkedin.com/in/griffin-surett-44a13b16a/",
   },
   {
     platform: "Instagram",
-    icon: '<ion-icon name="logo-instagram"></ion-icon>',
+    icon: '<i class="fab fa-instagram"></i>',
     link: "https://www.instagram.com/griffinswebservices/",
   },
   {
     platform: "Github",
-    icon: '<ion-icon name="logo-github"></ion-icon>',
+    icon: '<i class="fab fa-github"></i>',
     link: "https://github.com/griffinjoshs",
   },
 ];

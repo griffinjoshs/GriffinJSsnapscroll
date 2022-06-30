@@ -7,12 +7,18 @@
   width: 100%;
   height: 100%;
   z-index: 999;
+  -webkit-transition: 1s;
   transition: 1s;
   /* display: flex; */
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .loader-bg img {
-  animation: roll-in-left-boom 3s ease-out both;
+  -webkit-animation: roll-in-left-boom 3s ease-out both;
+          animation: roll-in-left-boom 3s ease-out both;
 }

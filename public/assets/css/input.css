@@ -1,146 +1,183 @@
-  .form-section {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    /* width: 90%; */
-  }
-  
-  #contact-form {
-    display: flex;
-    justify-content: center;
-  }
+.form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* width: 90%; */
+}
 
-  .contact-input {
-    font-size: 20px;
-    background: transparent;
-    border: solid 0.5px var(--textColor);
-    padding: 0.5pc 1.2pc;
-    margin: 10px 2px 30px 2px;
-    /* border: none; */
-    /* border-bottom: solid var(--primaryColor) 5px; */
-  }
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-  .hire-input {
-    background: transparent;
-    border: solid 0.5px var(--textColor);
-  }
+.contact-input {
+  font-size: 20px;
+  background: transparent;
+  border: solid 0.5px var(--textColor);
+  padding: 0.5pc 1.2pc;
+  margin: 10px 2px 30px 2px;
+  /* border: none; */
+  /* border-bottom: solid var(--primaryColor) 5px; */
+}
 
-  .hire-input textarea {
-    padding: 10px 20px;
-    margin-bottom: 30px;
-  }
+.hire-input {
+  background: transparent;
+  border: solid 0.5px var(--textColor);
+}
+
+.hire-input textarea {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
 
 .footer-input {
-    font-size: 15px;
-    padding: 1.5px 5px 1.5px 5px;
-    margin: 5px 1px 15px 0;
-    line-height: 2pc;
-    background: transparent;
-    border: rgb(167, 167, 167) solid 1px!important;
-    /* border-bottom: solid var(--primaryColor) 3px; */
-  }
+  font-size: 15px;
+  padding: 1.5px 5px 1.5px 5px;
+  margin: 5px 1px 15px 0;
+  line-height: 2pc;
+  background: transparent;
+  border: rgb(167, 167, 167) solid 1px!important;
+  /* border-bottom: solid var(--primaryColor) 3px; */
+}
 
-  .modal-input {
-    font-size: 15px;
-    padding: 3px 12px 6px 12px;
-    margin: 5px 1px 15px 0;
-    border: none;
-    border-bottom: solid var(--primaryColor) 3px;
-    background: rgb(51, 51, 51);
-  }
+.modal-input {
+  font-size: 15px;
+  padding: 3px 12px 6px 12px;
+  margin: 5px 1px 15px 0;
+  border: none;
+  border-bottom: solid var(--primaryColor) 3px;
+  background: rgb(51, 51, 51);
+}
 
-  .input {
-    color: var(--textColor);
-    outline: none;
-    font-family: "Rubik", sans-serif;
-    transition: 1.5s;
-    /* filter: drop-shadow(55px -2px 30px #5e76f6); */
-  }
+.input {
+  color: var(--textColor);
+  outline: none;
+  font-family: "Rubik", sans-serif;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  /* filter: drop-shadow(55px -2px 30px #5e76f6); */
+}
 
-  .contact-input:active {
-    border: solid 1px var(--textColor);
-  }
+.contact-input:active {
+  border: solid 1px var(--textColor);
+}
 
-  .input:active {
-    box-shadow: 0 0 20px 16px var(--primaryColor);
-  }
-  
-  .input::placeholder {
-    color: var(--textColor);
-  }
+.input:active {
+  box-shadow: 0 0 20px 16px var(--primaryColor);
+}
 
-  .name-section {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
+.input::-webkit-input-placeholder {
+  color: var(--textColor);
+}
+
+.input::-moz-placeholder {
+  color: var(--textColor);
+}
+
+.input:-ms-input-placeholder {
+  color: var(--textColor);
+}
+
+.input::placeholder {
+  color: var(--textColor);
+}
+
+.name-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .name-section .input {
-  white-space: wrap;
+white-space: wrap;
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 30px rgb(44, 43, 43) inset !important;
-  -webkit-text-fill-color: var(--textColor);
+-webkit-box-shadow: 0 0 0 30px rgb(44, 43, 43) inset !important;
+-webkit-text-fill-color: var(--textColor);
 }
 
-  .submit-form {
-    background: transparent;
-    border: solid var(--primaryColor) 2px;
-    height: 3pc;
-    width: 35%;
-    color: var(--primaryColor);
-    font-size: 18px;
-    /* margin: 0 auto; */
+.submit-form {
+  background: transparent;
+  border: solid var(--primaryColor) 2px;
+  height: 3pc;
+  width: 35%;
+  color: var(--primaryColor);
+  font-size: 18px;
+  /* margin: 0 auto; */
+}
+
+.submit-form:hover {
+  -webkit-animation: colorSlide 5s;
+          animation: colorSlide 5s;
+  background: var(--primaryColor);
+  color: var(--textColor);
+}
+
+@media screen and (min-width: 900px) {
+  /* .input {
+    width: 100%;
+  } */
+  .name-section .input {
+    width: 40%;
   }
 
-  .submit-form:hover {
-    animation: colorSlide 5s;
-    background: var(--primaryColor);
-    color: var(--textColor);
+  .form-section {
+    width: 80%;
+}
+}
+
+  @media screen and (max-width: 900px) {
+    .form-section {
+      width: 70%;
   }
 
-  @media screen and (min-width: 900px) {
-    /* .input {
+  .input {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .hire-input {
+    margin: 0 5pc;
+  }
+
+    .footer-input {
+    padding: 0 40px;
+    }
+
+    .name-section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    /* .name-section .input {
       width: 100%;
     } */
-    .name-section .input {
-      width: 40%;
-    }
-  
-    .form-section {
-      width: 80%;
+
+    /* .contact-input {
+      width: 100%
+    } */
   }
-  }
-  
-    @media screen and (max-width: 900px) {
-      .form-section {
-        width: 70%;
-    }
-  
-    .input {
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .hire-input {
-      margin: 0 5pc;
-    }
-  
-      .footer-input {
-      padding: 0 40px;
-      }
-  
-      .name-section {
-        flex-direction: column;
-      }
-  
-      /* .name-section .input {
-        width: 100%;
-      } */
-  
-      /* .contact-input {
-        width: 100%
-      } */
-    }

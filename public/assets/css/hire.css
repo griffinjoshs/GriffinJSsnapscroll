@@ -14,7 +14,8 @@
   overflow: hidden;
   text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
     6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-  filter: drop-shadow(55px -2px 30px #5e76f6);
+  -webkit-filter: drop-shadow(55px -2px 30px #5e76f6);
+          filter: drop-shadow(55px -2px 30px #5e76f6);
   text-align: center;
 }
 
@@ -33,9 +34,14 @@
 }
 
 .hire-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-image: url("../images/blueliquid2.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,10 +50,18 @@
 }
 
 .hire-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-self: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 #form-section {
@@ -65,39 +79,65 @@
 }
 
 #hire-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* align-items: center; */
   margin: auto 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .name-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #questionare {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
   min-height: 100vh;
   /* width: 80%; */
   scroll-snap-align: start;
   margin: 0 auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   text-align: justify;
   padding-bottom: 40px;
 }
 
 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
     6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-  filter: drop-shadow(55px -2px 30px #5e76f6);
+  -webkit-filter: drop-shadow(55px -2px 30px #5e76f6);
+          filter: drop-shadow(55px -2px 30px #5e76f6);
   line-height: 1.5;
 }
 
@@ -117,10 +157,18 @@
 } */
 
 .checkbox-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .checkbox-section input[type="checkbox"] {
@@ -192,6 +240,8 @@
   }
 
   .hire-right {
-    align-self: center
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
   }
 }

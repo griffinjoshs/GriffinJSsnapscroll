@@ -1,102 +1,109 @@
 /* The Modal (background) */
 .modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: var(--background);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    height: 40%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  #modal-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* #modal {
-    position: absolute;
-    bottom: -4500px; 
-    right: 30%; 
-    transform: translate(0, -50%);
-   z-index: 50;
-   overflow: hidden;
-   background-color: black;
-    width: 30pc;
-   height: 25pc;
-   box-shadow: 0px 4px 26px 4px var(--textColor);
-   border-radius: 10%;
+/* Modal Content */
+.modal-content {
+  background-color: var(--background);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 40%;
 }
 
-#modal-form-sec {
- display: flex;
- justify-content: center;
- align-items: center;                       
-   background-color: black;
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-#modal p {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    border: solid white 2px;
-    margin: 15px;
-    border-radius: 60%;
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #modal-form {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* #modal {
+  position: absolute;
+  bottom: -4500px; 
+  right: 30%; 
+  transform: translate(0, -50%);
+ z-index: 50;
+ overflow: hidden;
+ background-color: black;
+  width: 30pc;
+ height: 25pc;
+ box-shadow: 0px 4px 26px 4px var(--textColor);
+ border-radius: 10%;
+}
+
+#modal-form-sec {
+display: flex;
+justify-content: center;
+align-items: center;                       
+ background-color: black;
+}
+
+#modal p {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  border: solid white 2px;
+  margin: 15px;
+  border-radius: 60%;
+}
+
+#modal-form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #modal-form button {
-    background: transparent;
-    border: solid var(--textColor) 1px;
-    color: var(--textColor);
-    height: 2.3pc;
-    width: 6pc;
-    align-self: center;
+  background: transparent;
+  border: solid var(--textColor) 1px;
+  color: var(--textColor);
+  height: 2.3pc;
+  width: 6pc;
+  align-self: center;
 }
 
 #modal-form button:hover {
-    transition: 1s;
-    border: solid var(--textColor);
-    color: var(--background);
-    box-shadow: inset 10.5em 0 0 0 var(--textColor);
+  transition: 1s;
+  border: solid var(--textColor);
+  color: var(--background);
+  box-shadow: inset 10.5em 0 0 0 var(--textColor);
 } */

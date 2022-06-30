@@ -6,7 +6,6 @@ const Testimonials = [
     weblink: "https://cpaexamtutoring.com/",
     LIlink: "https://www.linkedin.com/in/i75/",
     FBlink: "https://www.facebook.com/darius.clark.54",
-    IGlink: "https://www.instagram.com/i75cpareview",
   },
   {
     name: "Michael Toohey",
@@ -31,6 +30,11 @@ const loadTestimonials = () => {
     <div class="text-area">
       <p>${testimonial.text}</p>
     </div>
+    <div class='their-socials'>
+    <a href=${testimonial.LIlink}><i class="fab fa-linkedin"></i></a>
+    <a href=${testimonial.IGlink}><i class="fab fa-instagram"></i></a>
+    <a href=${testimonial.FBlink}><i class="fab fa-facebook"></i></a>
+    </div>  
     </div>  
 `;
   });

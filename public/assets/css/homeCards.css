@@ -1,6 +1,9 @@
 @media screen and (max-width: 900px) {
     .card-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 40px 80px;
     margin: 20px;    
 }
@@ -10,9 +13,14 @@
 }
 
  .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
      margin: 0 auto;
     padding: 0 10c;
 }
@@ -39,9 +47,15 @@
     left: 0;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 15px;
 
 }
@@ -56,6 +70,7 @@
 }
 
  .card-container .service-card .face.face2 {
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: var(--primaryColor);
     background-image: url("../images/blueliquid2.webp");
@@ -70,6 +85,7 @@
     padding: 0;
     font-size: 10em;
     color: #fff;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -82,7 +98,10 @@
 
  .card-container .service-card:hover .face.face2 {
     height: 60px;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
  .card-container .service-card:hover .face.face2 h2 {
     font-size: 2em;
@@ -93,7 +112,10 @@
   padding: 0 5px 0 5px;
 }
  .card-container .service-card .face.face2 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 15px;
 }
  /* .card-container .card:nth-child(2) .face.face2 { */
@@ -110,5 +132,6 @@
     border: none;
     color: var(--textColor);
     font-size: 1.5pc;
-    animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    -webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+            animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }

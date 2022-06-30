@@ -1,61 +1,160 @@
 /* color slide animation */
 .color-slide {
-    animation: colorSlide 2.5s;
+  -webkit-animation: colorSlide 2.5s;
+          animation: colorSlide 2.5s;
+}
+
+@-webkit-keyframes colorSlide {
+  25% {
+    background: -webkit-linear-gradient(
+      left,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background-size: 200%;
+    -webkit-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    /*  to run: uncomment bg position  */
+    /* transition-delay: 0.0s, 0.15s;  */
+    background-position: -100% 200%;
   }
+  75% {
+    background: -webkit-linear-gradient(
+      left,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background-size: 200%;
+    -webkit-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    /*  to run: uncomment bg position  */
+    /* transition-delay: 0.0s, 0.15s;  */
+    background-position: 100% 200%;
+  }
+}
 
 @keyframes colorSlide {
-    25% {
-      background: linear-gradient(
-        90deg,
-        var(--primaryColor) 0%,
-        var(--primaryColor) 50%,
-        var(--secondaryColor) 50%,
-        var(--secondaryColor) 100%
-      );
-      background-size: 200%;
-      transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
-        color 0.2s linear;
-      /*  to run: uncomment bg position  */
-      /* transition-delay: 0.0s, 0.15s;  */
-      background-position: -100% 200%;
-    }
-    75% {
-      background: linear-gradient(
-        90deg,
-        var(--primaryColor) 0%,
-        var(--primaryColor) 50%,
-        var(--secondaryColor) 50%,
-        var(--secondaryColor) 100%
-      );
-      background-size: 200%;
-      transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
-        color 0.2s linear;
-      /*  to run: uncomment bg position  */
-      /* transition-delay: 0.0s, 0.15s;  */
-      background-position: 100% 200%;
-    }
+  25% {
+    background: -webkit-linear-gradient(
+      left,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background-size: 200%;
+    -webkit-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    /*  to run: uncomment bg position  */
+    /* transition-delay: 0.0s, 0.15s;  */
+    background-position: -100% 200%;
   }
+  75% {
+    background: -webkit-linear-gradient(
+      left,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      var(--primaryColor) 0%,
+      var(--primaryColor) 50%,
+      var(--secondaryColor) 50%,
+      var(--secondaryColor) 100%
+    );
+    background-size: 200%;
+    -webkit-transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    /*  to run: uncomment bg position  */
+    /* transition-delay: 0.0s, 0.15s;  */
+    background-position: 100% 200%;
+  }
+}
 
-  .roll-in-left-boom {
-    animation: roll-in-left-boom 3s ease-out both;
-  }
+.roll-in-left-boom {
+  -webkit-animation: roll-in-left-boom 3s ease-out both;
+          animation: roll-in-left-boom 3s ease-out both;
+}
 
-  @keyframes roll-in-left-boom {
-    0% {
-      transform: translateX(-800px) rotate(-540deg);
-      opacity: 0;
-    }
-    50% {
-      transform: translateX(0) rotate(0deg);
-      opacity: 1;
-    }
-    95% {
-      opacity: 0;
-      transform: scale(5) rotate(30deg);
-    }
-    100% {
-      opacity: 0;
-      transform: scale(0) rotate(0);
-      display: none;
-    }
+@-webkit-keyframes roll-in-left-boom {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
   }
+  50% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    -webkit-transform: scale(5) rotate(30deg);
+            transform: scale(5) rotate(30deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(0);
+            transform: scale(0) rotate(0);
+    display: none;
+  }
+}
+
+@keyframes roll-in-left-boom {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+            transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    -webkit-transform: scale(5) rotate(30deg);
+            transform: scale(5) rotate(30deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(0);
+            transform: scale(0) rotate(0);
+    display: none;
+  }
+}
