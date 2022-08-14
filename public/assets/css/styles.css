@@ -4,23 +4,24 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --background: black;
-    --textColor: white;
-    --primaryColor: #5e76f6;
-    --secondaryColor: blue;
-  }
+  --background: black;
+  --textColor: white;
+  --primaryColor: #5e76f6;
+  --secondaryColor: blue;
+}
 
-  body {
-    margin: 0;
-    background-color: var(--background);
-    color: var(--textColor);
-    /* overflow: hidden; */
-    font-family: "Righteous", cursive;
-    position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--textColor);
+  /* overflow: hidden; */
+  font-family: "Righteous", cursive;
+  position: relative;
 }
 
 .hide {
@@ -55,7 +56,7 @@ button:hover {
   .section-header {
     font-size: 60px;
   }
-  
+
   p {
     /* font-size: 20px; */
   }

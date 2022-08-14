@@ -3,6 +3,8 @@
   top: 0;
   right: 0;
   background-color: var(--primaryColor);
+  /* background-image: repeating-linear-gradient(315deg, var(--primaryColor), var(--primaryColor) 3px, transparent -19px, transparent 5px); */
+  /* background-size: 6px; */
   display: none;
   width: 100%;
   height: 100%;
@@ -16,9 +18,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          -webkit-animation: backgroundLoadChange 3s ease-out both;
+          animation: backgroundLoadChange 3s ease-out both;
 }
 
 .loader-bg img {
   -webkit-animation: roll-in-left-boom 3s ease-out both;
           animation: roll-in-left-boom 3s ease-out both;
 }
+
+.blocks {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 100vh;
+}
+
+.block {
+  background-color: var(--primaryColor);
+}
+
+.block,
+.clean {
+  box-sizing: border-box;
+  transition: 1.5s cubic-bezier(0.17, 0.67, 0, 1.34);
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+/* .clean {
+  background-color: var(--primaryColor);
+}
+
+.broken {
+  background-color: var(--primaryColor);
+} */

@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" type="image/x-icon" href="./assets/images/Griffin-logo.png">
-      <title>Contact</title>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
-      <link rel="stylesheet" href="./assets/css/styles.css" />
-      <link rel="stylesheet" href="./assets/css/shapes.css" />
-      <link rel="stylesheet" href="./assets/css/navbar.css" />
-      <link rel="stylesheet" href="./assets/css/contact.css" />
-      <link rel="stylesheet" href="./assets/css/input.css" />
-      <link rel="stylesheet" href="./assets/css/animation.css" />
-      <link rel="stylesheet" href="./assets/css/socialicons.css" />
-</head>
-<body>
-      <div id="pre-load"></div>
-      <nav></nav>
-      <div id="menu" class="hide"></div>
-        <div class="clear-for-menu">
-          <h1>Contact Me</h1>
-          <form name="form" id="contact-form" action="/api/subscribe" method="POST">
-          <section class="form-section">
-                <div class="name-section">
-                  <input type="text" class='input contact-input' name="firstName" id="firstName" placeholder="First Name" required>
-                  <input type="text" class='input contact-input' name="lastName" id="lastName" placeholder="Last Name" required>
-                </div>
-                    <input type="email" class='input contact-input' name="email" id="email" placeholder="Email" required>
-                    <textarea class='input contact-input' name="message" id="message" placeholder="Message" required></textarea>
-                    <br>
-                    <br>
-                    <div class="contact-btn-area">
-                    <button type="submit" class="submit-form" id="submit-contact-form">Send</button>
-                    <div class="form-space"></div>
-                    <ul class="social-icons" id="contact-socials"></ul>
-                  </div>
-            </section>
-          </form>
-            </div>
-</body>
-<script src="./assets/js/navbar.js"></script>
-<script src="./assets/js/navigation.js"></script>
-<!-- <script src="./assets/js/api.js"></script> -->
-<script src="./assets/js/socialicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/Griffin-logo.png"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/shapes.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/socialicons.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body style="min-height: 100px">
+    <div id="pre-load"></div>
+    <nav></nav>
+    <div id="menu" class="hide"></div>
+    <div class="clear-for-menu">
+      <br />
+      <h1>Contact Me</h1>
+      <form name="form" id="contact-form" action="/api/subscribe" method="POST">
+        <section class="form-section">
+          <div class="name-section">
+            <input
+              type="text"
+              class="input contact-input"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input contact-input"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            class="input contact-input"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            class="input contact-input"
+            name="message"
+            id="message"
+            placeholder="Message"
+            required
+          ></textarea>
+          <br />
+          <br />
+          <div class="contact-btn-area">
+            <button type="submit" class="submit-form" id="submit-contact-form">
+              Send
+            </button>
+            <div class="form-space"></div>
+            <ul class="social-icons" id="contact-socials"></ul>
+          </div>
+        </section>
+      </form>
+    </div>
+  </body>
+  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/navigation.js"></script>
+  <script src="./assets/js/socialicons.js"></script>
+  <script
+    src="https://kit.fontawesome.com/851dcf7ec4.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </html>

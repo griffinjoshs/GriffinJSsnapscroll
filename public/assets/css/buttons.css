@@ -1,11 +1,11 @@
 .square-btn {
-  color: white;
   background: transparent;
   border: 1px solid white;
   box-shadow: inset 0 0 0 0 white;
   padding: 15px 30px;
   width: 200px;
   height: 50px;
+  color: white;
 }
 
 .square-btn:hover {
@@ -13,6 +13,22 @@
   color: black;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
+}
+
+.clear-btn {
+
+}
+
+.clear-btn:hover {
+  
+}
+
+.white-btn {
+
+}
+
+.white-btn:hover {
+
 }
 
 @media screen and (max-width: 500px) {
