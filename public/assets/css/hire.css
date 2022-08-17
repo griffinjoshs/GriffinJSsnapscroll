@@ -12,10 +12,10 @@
   min-height: 100vh;
   scroll-snap-align: start;
   overflow: hidden;
-  text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
-    6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-  -webkit-filter: drop-shadow(55px -2px 30px #5e76f6);
-          filter: drop-shadow(55px -2px 30px #5e76f6);
+  text-shadow: 12px 5px 24px var(--primaryColor), -5px 5px 36px var(--primaryColor),
+    6px 5px 29px var(--primaryColor), -2px -5px 10px var(--primaryColor);
+  -webkit-filter: drop-shadow(55px -2px 30px var(--primaryColor));
+          filter: drop-shadow(55px -2px 30px var(--primaryColor));
   text-align: center;
 }
 
@@ -134,10 +134,10 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6,
-    6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
-  -webkit-filter: drop-shadow(55px -2px 30px #5e76f6);
-          filter: drop-shadow(55px -2px 30px #5e76f6);
+  text-shadow: 12px 5px 24px var(--primaryColor), -5px 5px 36px var(--primaryColor),
+    6px 5px 29px var(--primaryColor), -2px -5px 10px var(--primaryColor);
+  -webkit-filter: drop-shadow(55px -2px 30px var(--primaryColor));
+          filter: drop-shadow(55px -2px 30px var(--primaryColor));
   line-height: 1.5;
 }
 

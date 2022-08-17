@@ -12,7 +12,7 @@ const block1 = document.querySelector('.block-1')
 const animateHomeScreen = () => {
   // typing effect
 let i = 0;
-const txt = "LET ME BUILD YOUR DREAM WEBSITE";
+let txt = "LET ME BUILD YOUR DREAM WEBSITE";
 let speed = 50;
 
 

@@ -5,13 +5,14 @@
     overflow-y: scroll;
     height: 100vh;
     margin: 0;
+    animation: flip-out-hor-top 2s
 }
 
 #header {
     min-height: 100vh;
     scroll-snap-align: start;
     overflow: hidden;
-    text-shadow: 12px 5px 24px #5e76f6, -5px 5px 36px #5e76f6, 6px 5px 29px #5e76f6, -2px -5px 10px #5e76f6;
+    text-shadow: 12px 5px 24px var(--primaryColor), -5px 5px 36px var(--primaryColor), 6px 5px 29px var(--primaryColor), -2px -5px 10px var(--primaryColor);
 }
 
 #about {
